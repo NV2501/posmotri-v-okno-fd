@@ -129,7 +129,7 @@ ol {
 /* Стили для видео */
 
 .result__video-container {
-  position: relative;
+  position: relative;  /* для прелоудера*/
   width: 100%;
   height: 386px;
 }
@@ -252,7 +252,7 @@ ol {
 }
 
 .content__list-container {
-  position: relative;
+  position: relative;  /* для прелоудера*/
   max-height: 298px;
   overflow-y: auto;
 }
