@@ -91,11 +91,12 @@ ol {
 .button:focus-visible {
   outline: 1px solid #fff;
   border-radius: 0;
+  outline-offset: 2px;
 }
 
 .title {
   font-size: 75px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   line-height: 94%;
 }
@@ -107,8 +108,6 @@ ol {
 .content {
   max-width: 1140px;
   width: 100%;
-  max-height: 549px;
-  height: 100%;
   display: grid;
   margin: auto;
   grid-template-columns: 711px 399px;
@@ -122,8 +121,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  max-height: 475px;
-  height: 100%;
+  padding-bottom: 16px;
 }
 
 /* Стили для видео */
@@ -171,7 +169,7 @@ ol {
   border-radius: 0;
   font-family: inherit;
   font-size: 18px;
-  color: #fff;
+  color: inherit;
   padding: 2.5px 14px 2.5px 0;
   width: 225px;
 }
@@ -202,6 +200,7 @@ ol {
   display: flex;
   gap: 5px;
   cursor: pointer;
+  align-items: center;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -253,8 +252,11 @@ ol {
 
 .content__list-container {
   position: relative;  /* для прелоудера*/
-  max-height: 298px;
+  max-height: 318px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .content__list {
@@ -303,7 +305,7 @@ ol {
 
 .content__video-card-title {
   max-width: 196px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -317,7 +319,7 @@ ol {
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22.2px;
+  line-height: 16.2px;
 }
 
 .content__video-card-thumbnail {
